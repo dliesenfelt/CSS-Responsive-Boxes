@@ -1,3 +1,62 @@
+* {
+  margin: 5px;
+}
+
 body {
   background: peachpuff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.a {
+  outline: 2px solid red;
+  min-height: 10vh;
+}
+
+.wrapper {
+  margin: 0; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box {
+  margin: 0;
+  width: 100%;
+  display: flex;
+}
+
+.b, .c, .d, .e, .f, .g {
+  outline: 2px solid blue;
+  flex-grow: 1;
+  min-height: 20vh;
+}
+
+.h {
+  outline: 2px solid green;
+  min-height: 40vh;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .a {
+    width: 100%;
+    min-height: 35vh;
+  }
+  
+  .wrapper {
+    flex-grow: 3;
+  }
+
+  .h {
+    min-height: 60vh;
+    flex-grow: 1;
+  }
 }

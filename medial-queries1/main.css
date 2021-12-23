@@ -1,3 +1,57 @@
+
+* {
+  margin: 10px;
+}
+
 body {
   background: blanchedalmond;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.a {
+  outline: 2px solid red ;
+  min-height: 15vh;
+}
+
+.b {
+  outline: 2px solid blue;
+  min-height: 70vh;
+}
+
+.c {
+  outline:  2px solid green;
+  min-height: 15vh;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 100v;
+  }
+  
+  .a {
+    outline: 2px solid red ;
+    width: 100%;
+    min-height: 25vh;
+  }
+  
+  .b {
+    outline: 2px solid blue;
+    min-height: 60vh;
+    flex-grow: 4;
+  }
+  
+  .c {
+    outline:  2px solid green;
+    min-height: 60vh;
+    flex-grow: 1;
+  }
+}
+
